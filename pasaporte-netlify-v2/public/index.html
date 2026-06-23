@@ -1661,5 +1661,22 @@ apiCall({action:'getAll'}, function(res){
   }
 });
 </script>
+
+<!-- ── LOGO STING SPLASH ──────────────────────────────── -->
+<div id="sting-overlay" style="position:fixed;inset:0;z-index:9999;background:#15100c;transition:opacity 0.7s ease;">
+  <iframe src="./logo-sting.html" style="width:100%;height:100%;border:none;display:block;" allow="autoplay"></iframe>
+</div>
+<script>
+  function hideSting() {
+    var el = document.getElementById('sting-overlay');
+    if (!el) return;
+    el.style.opacity = '0';
+    el.style.pointerEvents = 'none';
+    setTimeout(function(){ el.remove(); }, 700);
+  }
+  window.addEventListener('message', function(e) {
+    if (e.data === 'stingComplete') hideSting();
+  });
+</script>
 </body>
 </html>
