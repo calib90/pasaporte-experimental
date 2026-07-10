@@ -418,7 +418,7 @@ body::before {
       </div>
       <p style="font-family:serif;font-size:9px;color:#3A3A2A;margin-top:5px;font-style:italic;">Tu bartender te la compartió al registrarte.</p>
     </div>
-    <div id="login-error" style="display:none;background:#1A0808;border:1px solid #8A202066;border-radius:2px;padding:10px 12px;margin-bottom:14px;">
+    <div id="login-error" style="display:none;background:rgba(30,5,5,0.35);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(138,32,32,0.4);border-radius:2px;padding:10px 12px;margin-bottom:14px;">
       <p style="font-family:serif;font-size:10px;color:#E8A0A0;" id="login-error-msg"></p>
     </div>
     <button class="btn-gold" id="login-btn" onclick="doLogin()">Acceder a mi Pasaporte</button>
@@ -448,7 +448,7 @@ body::before {
           <p style="font-family:serif;font-size:9px;letter-spacing:3px;color:#8A7A5A;text-transform:uppercase;margin-bottom:4px;">Titular del Pasaporte</p>
           <p id="d-name" style="font-family:'Cinzel',serif;font-size:16px;color:#F0E6CC;letter-spacing:1px;font-weight:600;"></p>
         </div>
-        <div style="background:linear-gradient(135deg,#1A4D3C,#0D2A1F);border:1px solid #2E7D5A;border-radius:2px;padding:6px 10px;text-align:center;">
+        <div style="background:rgba(20,60,30,0.35);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(46,125,90,0.4);border-radius:8px;padding:6px 10px;text-align:center;">
           <p style="font-family:serif;font-size:7px;letter-spacing:2px;color:#2E7D5A;text-transform:uppercase;">Nivel</p>
           <p id="d-level-name" style="font-family:'Cinzel',serif;font-size:9px;color:#E8C96A;letter-spacing:1px;margin-top:2px;"></p>
         </div>
@@ -494,12 +494,12 @@ body::before {
 
     <!-- Quick links -->
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-      <button onclick="window.open('https://cocktailmenusg.netlify.app/#classic-section','_blank')" style="background:#0E0E0A;border:1px solid #C9A84C44;border-radius:4px;padding:14px 10px;text-align:center;">
+      <button onclick="window.open('https://cocktailmenusg.netlify.app/#classic-section','_blank')" style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #C9A84C44;border-radius:4px;padding:14px 10px;text-align:center;">
         <div style="font-size:20px;margin-bottom:4px;">🍸</div>
         <p style="font-family:serif;font-size:8px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Menú Digital</p>
         <p style="font-family:'Cinzel',serif;font-size:10px;color:#C9A84C;letter-spacing:1px;">Explorar Menú</p>
       </button>
-      <button onclick="window.open('https://coctelerialabsurvey.netlify.app/','_blank')" style="background:#0E0E0A;border:1px solid #2E7D5A44;border-radius:4px;padding:14px 10px;text-align:center;">
+      <button onclick="window.open('https://coctelerialabsurvey.netlify.app/','_blank')" style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #2E7D5A44;border-radius:4px;padding:14px 10px;text-align:center;">
         <div style="font-size:20px;margin-bottom:4px;">✦</div>
         <p style="font-family:serif;font-size:8px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">Encuesta</p>
         <p style="font-family:'Cinzel',serif;font-size:10px;color:#2E7D5A;letter-spacing:1px;">Compartir Opinión</p>
@@ -537,7 +537,7 @@ body::before {
       <h2 style="font-family:'Cinzel',serif;font-size:20px;color:#C9A84C;letter-spacing:3px;text-transform:uppercase;">Mis Recompensas</h2>
       <div class="sep"><div class="sep-line sep-l"></div><div style="font-size:10px;color:#C9A84C44;">◆</div><div class="sep-line sep-r"></div></div>
     </div>
-    <div style="display:flex;gap:2px;margin-bottom:20px;background:#0A0A08;border-radius:4px;padding:3px;border:1px solid #1A1A1A;">
+    <div style="display:flex;gap:2px;margin-bottom:20px;background:rgba(5,4,3,0.3);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:12px;padding:3px;border:1px solid rgba(201,168,76,0.1);">
       <button onclick="rewardsTab('available')" id="tab-available" style="flex:1;padding:8px 6px;border-radius:2px;border:none;background:#1A1A10;border-bottom:2px solid #C9A84C;">
         <p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#C9A84C;text-transform:uppercase;margin-bottom:1px;">Disponibles</p>
         <p id="tab-available-count" style="font-family:'Cinzel',serif;font-size:16px;color:#C9A84C;">0</p>
@@ -633,7 +633,7 @@ body::before {
           <p style="font-family:serif;font-size:8px;letter-spacing:4px;color:#8A5A5A;text-transform:uppercase;margin-bottom:2px;">🔑 Modo Administrador</p>
           <p style="font-family:'Cinzel',serif;font-size:16px;color:#E8A0A0;letter-spacing:2px;">Panel del Bartender</p>
         </div>
-        <button onclick="closeAdmin()" style="background:#1A0A0A;border:1px solid #8A2020;border-radius:2px;padding:6px 12px;color:#E8A0A0;font-family:serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;">Cerrar</button>
+        <button onclick="closeAdmin()" style="background:rgba(25,5,5,0.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(138,32,32,0.4);border-radius:2px;padding:6px 12px;color:#E8A0A0;font-family:serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;">Cerrar</button>
       </div>
       <div style="display:flex;">
         <button onclick="adminTab('sellos')" id="atab-sellos" style="flex:1;padding:10px 6px;background:none;border:none;border-bottom:2px solid #C9A84C;">
@@ -670,7 +670,7 @@ body::before {
 
 <!-- ── TOAST ──────────────────────────────────────────── -->
 <div id="toast" style="display:none;position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:300;width:90vw;max-width:320px;">
-  <div style="background:linear-gradient(135deg,#1A1A08,#141408);border:1px solid #C9A84C88;border-radius:4px;padding:14px 18px;box-shadow:0 8px 32px #00000099;display:flex;align-items:center;gap:12px;">
+  <div style="background:rgba(10,8,3,0.3);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,0.35);border-radius:12px;padding:14px 18px;box-shadow:0 8px 32px #00000099;display:flex;align-items:center;gap:12px;">
     <div style="width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#C9A84C,#8A6A20);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">✦</div>
     <div><p id="toast-title" style="font-family:'Cinzel',serif;font-size:13px;color:#E8C96A;margin-bottom:2px;"></p><p id="toast-sub" style="font-family:Georgia,serif;font-size:10px;color:#8A7A5A;font-style:italic;"></p></div>
   </div>
@@ -984,6 +984,9 @@ function doLogin() {
   });
 }
 function loginSuccess(member) {
+  // Play vault video on login
+  var bgv = document.getElementById('bg-video');
+  if (bgv) { bgv.currentTime = 0; bgv.play(); }
   state.member = member;
   state.redeemedLevels = {};
   state.stampLog = [];
@@ -1189,7 +1192,7 @@ function renderAdminSellos() {
       '<div style="flex:1;background:#C9A84C22;border:1px solid #C9A84C44;border-radius:2px;padding:6px 10px;">' +
         '<p style="font-family:serif;font-size:8px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;">Nivel Actual</p>' +
         '<p style="font-family:Cinzel,serif;font-size:11px;color:#C9A84C;">'+level.name+'</p></div>' +
-      (nxt?'<div style="flex:1;background:#1A1A12;border:1px solid #2A2A1A;border-radius:2px;padding:6px 10px;">' +
+      (nxt?'<div style="flex:1;background:rgba(10,8,3,0.25);border:1px solid rgba(201,168,76,0.15);border-radius:6px;padding:6px 10px;">' +
         '<p style="font-family:serif;font-size:8px;color:#555;letter-spacing:2px;text-transform:uppercase;margin-bottom:2px;">Siguiente</p>' +
         '<p style="font-family:Cinzel,serif;font-size:11px;color:#555;">'+nxt.name+'</p></div>':'') +
     '</div>' +
@@ -1216,7 +1219,7 @@ function renderLog() {
         '<div><p style="font-family:serif;font-size:10px;color:'+(e.action==='add'?'#C9A84C':'#8A5A5A')+';">'+(e.action==='add'?'Sello #'+e.n+' agregado':'Sello removido')+'</p>' +
         '<p style="font-family:monospace;font-size:8px;color:#333;margin-top:1px;">'+e.time+'</p></div>' +
       '</div>' +
-      '<div style="background:#1A1A12;border:1px solid #2A2A1A;border-radius:2px;padding:3px 7px;"><p style="font-family:serif;font-size:8px;color:#555;letter-spacing:1px;text-transform:uppercase;">'+e.level+'</p></div>' +
+      '<div style="background:rgba(10,8,3,0.25);border:1px solid rgba(201,168,76,0.15);border-radius:6px;padding:3px 7px;"><p style="font-family:serif;font-size:8px;color:#555;letter-spacing:1px;text-transform:uppercase;">'+e.level+'</p></div>' +
     '</div>';
   });
   return html;
@@ -1436,8 +1439,8 @@ function renderAdminBadges() {
   var ICONS  = ['🏆','🎉','🌟','🍹','🎊','👑','🔥','💎','🎯','🥂','🌙','⭐','🎪','🎭','🍸'];
   var COLORS = ['#C9A84C','#2E7D5A','#8A2020','#1A4D8A','#6A2080','#805020','#208050','#204080'];
 
-  var html = '<div style="display:flex;gap:2px;margin-bottom:16px;background:#0A0A08;border-radius:4px;padding:3px;border:1px solid #1A1A1A;">' +
-    '<button data-bst="event" onclick="badgeSubTabBtn(this)" id="bst-event" style="flex:1;padding:10px 6px;background:#1A1A10;border:none;border-bottom:2px solid #C9A84C;">' +
+  var html = '<div style="display:flex;gap:2px;margin-bottom:16px;background:rgba(5,4,3,0.3);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:12px;padding:3px;border:1px solid rgba(201,168,76,0.1);">' +
+    '<button data-bst="event" onclick="badgeSubTabBtn(this)" id="bst-event" style="flex:1;padding:10px 6px;background:rgba(201,168,76,0.1);backdrop-filter:blur(12px);border:none;border-bottom:2px solid #C9A84C;border-radius:10px;">' +
       '<p style="font-family:serif;font-size:9px;letter-spacing:2px;color:#C9A84C;text-transform:uppercase;margin-bottom:2px;">🎉 Evento</p>' +
       '<p style="font-family:serif;font-size:8px;color:#3A3A2A;font-style:italic;">Todos los miembros</p>' +
     '</button>' +
@@ -1472,8 +1475,8 @@ function renderAdminBadges() {
     '<div class="field"><label class="label">Descripción (opcional)</label><input class="inp" id="badge-desc" type="text" placeholder="Descripción corta..." oninput="updateBadgePreview()"/></div>' +
     '<div class="field"><label class="label">Ícono</label>' +
       '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;" id="icon-picker">' +
-      ICONS.map(function(ic){return '<button data-ic="'+ic+'" onclick="selectIconBtn(this)" class="icon-opt" style="width:36px;height:36px;font-size:18px;background:#0A0A08;border:2px solid #2A2A1A;border-radius:4px;">'+ic+'</button>';}).join('') +
-      (state.customIcons||[]).map(function(ci){return '<button data-ic="'+ci.dataUrl+'" onclick="selectIconBtn(this)" class="icon-opt" style="width:36px;height:36px;padding:2px;background:#0A0A08;border:2px solid #2A2A1A;border-radius:4px;"><img src="'+ci.dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/></button>';}).join('') +
+      ICONS.map(function(ic){return '<button data-ic="'+ic+'" onclick="selectIconBtn(this)" class="icon-opt" style="width:36px;height:36px;font-size:18px;background:rgba(5,4,3,0.35);border:2px solid rgba(201,168,76,0.12);border-radius:6px;">'+ic+'</button>';}).join('') +
+      (state.customIcons||[]).map(function(ci){return '<button data-ic="'+ci.dataUrl+'" onclick="selectIconBtn(this)" class="icon-opt" style="width:36px;height:36px;padding:2px;background:rgba(5,4,3,0.35);border:2px solid rgba(201,168,76,0.12);border-radius:6px;"><img src="'+ci.dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/></button>';}).join('') +
       '<label style="cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:4px;" title="Subir ícono propio"><span style="font-size:20px;">📁</span><input type="file" accept="image/*" data-ctx="badge" style="display:none;" onchange="uploadCustomIconBtn(this)"/></label>' +
       '</div>' +
       '<div style="display:flex;align-items:center;gap:8px;">' +
@@ -1486,7 +1489,7 @@ function renderAdminBadges() {
       COLORS.map(function(c){return '<button data-clr="'+c+'" onclick="selectColorBtn(this)" class="color-opt" data-color="'+c+'" style="width:30px;height:30px;background:'+c+';border:2px solid #2A2A1A;border-radius:50%;"></button>';}).join('') +
       '</div>' +
     '</div>' +
-    '<div id="badge-preview" style="background:#0A0A08;border:1px solid #C9A84C44;border-radius:4px;padding:14px;margin-bottom:14px;display:flex;align-items:center;gap:12px;">' +
+    '<div id="badge-preview" style="background:rgba(5,4,3,0.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(201,168,76,0.18);border-radius:12px;padding:14px;margin-bottom:14px;display:flex;align-items:center;gap:12px;">' +
       '<div id="prev-circle" style="width:48px;height:48px;border-radius:50%;background:radial-gradient(circle,#C9A84C22,#0A0A08);border:2px solid #C9A84C;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 0 10px #C9A84C44;overflow:hidden;">🏆</div>' +
       '<div><p id="prev-name" style="font-family:Cinzel,serif;font-size:13px;color:#C9A84C;letter-spacing:1px;">Nombre del badge</p><p id="prev-desc" style="font-family:Georgia,serif;font-size:10px;color:#8A7A5A;font-style:italic;">Descripción</p></div>' +
     '</div>' +
@@ -1526,7 +1529,7 @@ function renderBadgeList(badges, type) {
   var html = '';
   badges.forEach(function(b) {
     var owner = type==='individual' ? state.members.find(function(m){return m.number===b.memberNumber;}) : null;
-    html += '<div style="background:linear-gradient(135deg,#111108,#0E0E0A);border:1px solid '+b.color+'44;border-radius:4px;padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;">' +
+    html += '<div style="background:rgba(8,6,3,0.2);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid '+b.color+'44;border-radius:4px;padding:14px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px;">' +
       '<div style="width:44px;height:44px;border-radius:50%;background:radial-gradient(circle,'+b.color+'22,#0A0A08);border:2px solid '+b.color+';display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;box-shadow:0 0 10px '+b.color+'44;overflow:hidden;">'+(b.icon&&(b.icon.startsWith('data:')||b.icon.startsWith('http'))?'<img src="'+b.icon+'" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"/>':'<span style="font-size:20px;">'+b.icon+'</span>')+'</div>' +
       '<div style="flex:1;">' +
         '<p style="font-family:Cinzel,serif;font-size:12px;color:'+b.color+';letter-spacing:1px;margin-bottom:2px;">'+escapeHtml(b.name)+'</p>' +
@@ -1722,8 +1725,8 @@ function renderAdminRegalos() {
         '<input class="inp" id="regalo-desc" type="text" placeholder="Descripcion del regalo"/></div>' +
       '<div class="field"><label class="label">Ícono</label>' +
         '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;" id="regalo-icon-picker">' +
-        ICONS.map(function(ic){return '<button data-ic="'+ic+'" onclick="selectRegaloIcon(this)" style="width:36px;height:36px;font-size:18px;background:#0A0A08;border:2px solid #2A2A1A;border-radius:4px;cursor:pointer;">'+ic+'</button>';}).join('') +
-        (state.customIcons||[]).map(function(ci){return '<button data-ic="'+ci.dataUrl+'" onclick="selectRegaloIcon(this);window._regaloIcon=\''+ci.dataUrl+'\'" style="width:36px;height:36px;padding:2px;background:#0A0A08;border:2px solid #2A2A1A;border-radius:4px;"><img src="'+ci.dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/></button>';}).join('') +
+        ICONS.map(function(ic){return '<button data-ic="'+ic+'" onclick="selectRegaloIcon(this)" style="width:36px;height:36px;font-size:18px;background:rgba(5,4,3,0.35);border:2px solid rgba(201,168,76,0.12);border-radius:6px;cursor:pointer;">'+ic+'</button>';}).join('') +
+        (state.customIcons||[]).map(function(ci){return '<button data-ic="'+ci.dataUrl+'" onclick="selectRegaloIcon(this);window._regaloIcon=\''+ci.dataUrl+'\'" style="width:36px;height:36px;padding:2px;background:rgba(5,4,3,0.35);border:2px solid rgba(201,168,76,0.12);border-radius:6px;"><img src="'+ci.dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/></button>';}).join('') +
         '<label style="cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:4px;"><span style="font-size:20px;">📁</span><input type="file" accept="image/*" data-ctx="regalo" style="display:none;" onchange="uploadCustomIconBtn(this)"/></label>' +
         '</div></div>' +
       '<div class="field"><label class="label">Asignar a</label>' +
@@ -1870,7 +1873,7 @@ function renderAdminDash() {
   var BDGCOLORS= ['#C9A84C','#2E7D5A','#8A2020','#1A4D8A','#6A2080','#805020'];
   var evBadgesList = evBadges.length ?
     evBadges.map(function(b,bi){
-      return '<div style="display:flex;align-items:center;gap:8px;background:#111108;border:1px solid '+b.color+'44;border-radius:4px;padding:8px 10px;margin-bottom:6px;">' +
+      return '<div style="display:flex;align-items:center;gap:8px;background:rgba(8,6,3,0.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid '+b.color+'44;border-radius:4px;padding:8px 10px;margin-bottom:6px;">' +
         (b.icon&&(b.icon.startsWith('data:')||b.icon.startsWith('http')) ? '<img src="'+b.icon+'" style="width:28px;height:28px;object-fit:cover;border-radius:3px;flex-shrink:0;"/>' : '<span style="font-size:18px;flex-shrink:0;">'+b.icon+'</span>') +
         '<span style="font-family:Cinzel,serif;font-size:11px;color:'+b.color+';flex:1;">'+escapeHtml(b.name)+'</span>' +
         '<button data-ebi="'+bi+'" onclick="deleteEventBadgeBtn(this)" style="background:none;border:none;color:#555;font-size:14px;cursor:pointer;">✕</button>' +
@@ -1887,8 +1890,8 @@ function renderAdminDash() {
         '<div style="margin-bottom:8px;"><label style="font-family:serif;font-size:8px;letter-spacing:3px;color:#8A7A5A;text-transform:uppercase;display:block;margin-bottom:4px;">Nombre</label><input class="inp" id="ev-badge-name" type="text" placeholder="Ej. Noche Gin, Evento Especial..."/></div>' +
         '<div style="margin-bottom:8px;"><label style="font-family:serif;font-size:8px;letter-spacing:3px;color:#8A7A5A;text-transform:uppercase;display:block;margin-bottom:4px;">Ícono</label>' +
           '<div style="display:flex;flex-wrap:wrap;gap:4px;" id="ev-bic-grid">' +
-          BDGICONS.map(function(ic){return '<button data-evic="'+ic+'" onclick="selEvIcon(this)" style="width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;cursor:pointer;">'+ic+'</button>';}).join('') +
-          (state.customIcons||[]).map(function(ci){return '<button data-evic="'+ci.dataUrl+'" onclick="selEvIcon(this)" style="width:30px;height:30px;padding:2px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;"><img src="'+ci.dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/></button>';}).join('') +
+          BDGICONS.map(function(ic){return '<button data-evic="'+ic+'" onclick="selEvIcon(this)" style="width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;cursor:pointer;">'+ic+'</button>';}).join('') +
+          (state.customIcons||[]).map(function(ci){return '<button data-evic="'+ci.dataUrl+'" onclick="selEvIcon(this)" style="width:30px;height:30px;padding:2px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;"><img src="'+ci.dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/></button>';}).join('') +
           '<label style="cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:3px;" title="Subir imagen"><span style="font-size:16px;">📁</span><input type="file" accept="image/*" data-ctx="event" style="display:none;" onchange="uploadEvIcon(this)"/></label>' +
           '</div>' +
         '</div>' +
@@ -1948,7 +1951,7 @@ function buildDashGrid(members) {
           '<p style="font-family:Cinzel,serif;font-size:13px;color:#F0E6CC;margin-bottom:2px;">' + escapeHtml(m.name) + '</p>' +
           '<p style="font-family:monospace;font-size:9px;color:#555;">' + escapeHtml(m.number) + '</p>' +
         '</div>' +
-        '<div style="background:#1A1A10;border:1px solid ' + lv.color + '33;border-radius:2px;padding:2px 6px;">' +
+        '<div style="background:rgba(20,18,8,0.3);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid ' + lv.color + '33;border-radius:2px;padding:2px 6px;">' +
           '<p style="font-family:serif;font-size:8px;color:' + lv.color + ';letter-spacing:1px;text-transform:uppercase;">' + lv.icon + ' ' + lv.name + '</p>' +
         '</div>' +
       '</div>' +
@@ -1978,7 +1981,7 @@ function showDashEnroll() {
   el.innerHTML =
     '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">' +
       '<p style="font-family:Cinzel,serif;font-size:15px;color:#C9A84C;letter-spacing:2px;">Nuevo Miembro</p>' +
-      '<button onclick="renderAdminDash()" style="background:#0E0E0A;border:1px solid #2A2A1A;border-radius:2px;padding:6px 12px;font-family:serif;font-size:9px;color:#555;letter-spacing:2px;text-transform:uppercase;">← Volver</button>' +
+      '<button onclick="renderAdminDash()" style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #2A2A1A;border-radius:2px;padding:6px 12px;font-family:serif;font-size:9px;color:#555;letter-spacing:2px;text-transform:uppercase;">← Volver</button>' +
     '</div>' +
     '<div style="background:rgba(10,8,5,0.22);backdrop-filter:blur(28px) saturate(1.8);-webkit-backdrop-filter:blur(28px) saturate(1.8);border:1px solid rgba(201,168,76,0.22);border-top-color:rgba(201,168,76,0.45);border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,0.25),inset 0 1px 0 rgba(201,168,76,0.22);padding:20px;margin-bottom:14px;">' +
       '<div class="field"><label class="label">Nombre Completo</label><input class="inp" id="de-name" type="text" placeholder="Nombre y apellido"/></div>' +
@@ -1991,7 +1994,7 @@ function showDashEnroll() {
       '<p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#555;text-transform:uppercase;margin-bottom:6px;">Asignación automática</p>' +
       '<p style="font-family:monospace;font-size:11px;color:#3A3A2A;" id="de-num-preview"></p>' +
     '</div>' +
-    '<div id="de-error" style="display:none;background:#1A0808;border:1px solid #8A202066;border-radius:2px;padding:10px;margin-bottom:12px;">' +
+    '<div id="de-error" style="display:none;background:rgba(30,5,5,0.35);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(138,32,32,0.4);border-radius:2px;padding:10px;margin-bottom:12px;">' +
       '<p id="de-error-msg" style="font-family:serif;font-size:10px;color:#E8A0A0;"></p>' +
     '</div>' +
     '<div id="de-success" style="display:none;"></div>' +
@@ -2159,7 +2162,7 @@ function openDashMember(num) {
     // Determine if event badge or individual badge by checking individualBadges index
     var isIndividual = state.individualBadges && state.individualBadges.indexOf(b) !== -1;
     var globalIdx = isIndividual ? state.individualBadges.indexOf(b) : state.eventBadges.indexOf(b);
-    return '<div style="display:flex;align-items:center;gap:6px;background:#111108;border:1px solid ' + b.color + '44;border-radius:4px;padding:5px 8px;margin-bottom:5px;">' +
+    return '<div style="display:flex;align-items:center;gap:6px;background:rgba(8,6,3,0.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid ' + b.color + '44;border-radius:4px;padding:5px 8px;margin-bottom:5px;">' +
       (b.icon&&(b.icon.startsWith('data:')||b.icon.startsWith('http'))?'<img src="'+b.icon+'" style="width:26px;height:26px;object-fit:cover;border-radius:3px;flex-shrink:0;"/>':'<span style="font-size:15px;flex-shrink:0;">'+b.icon+'</span>') +
       '<span style="font-family:serif;font-size:10px;color:' + b.color + ';flex:1;">' + escapeHtml(b.name) + '</span>' +
       '<button data-bidx="'+globalIdx+'" data-btype="'+(isIndividual?'individual':'event')+'" data-mnum="'+mNum+'" onclick="dashDeleteBadgeBtn(this)" style="background:none;border:none;color:#555;font-size:16px;cursor:pointer;padding:2px 4px;flex-shrink:0;">✕</button>' +
@@ -2197,7 +2200,7 @@ function openDashMember(num) {
             '<p style="font-family:serif;font-size:8px;letter-spacing:3px;color:#8A7A5A;text-transform:uppercase;margin-bottom:2px;">Perfil del Miembro</p>' +
             '<p style="font-family:Cinzel,serif;font-size:16px;color:#F0E6CC;">' + escapeHtml(m.name) + '</p>' +
           '</div>' +
-          '<button onclick="closeDashDetail()" style="background:#0E0E0A;border:1px solid #2A2A1A;border-radius:2px;padding:6px 12px;color:#8A7A5A;font-family:serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;">← Volver</button>' +
+          '<button onclick="closeDashDetail()" style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #2A2A1A;border-radius:2px;padding:6px 12px;color:#8A7A5A;font-family:serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;">← Volver</button>' +
         '</div>' +
 
         // Profile
@@ -2234,7 +2237,7 @@ function openDashMember(num) {
           '<div style="background:rgba(5,4,3,0.2);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(201,168,76,0.12);border-radius:12px;padding:12px;margin-top:8px;">' +
             '<p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#555;text-transform:uppercase;margin-bottom:8px;">Agregar Badge</p>' +
             '<div class="field"><label class="label">Nombre</label><input class="inp" id="dd-badge-name" type="text" placeholder="Ej. VIP del Mes..."/></div>' +
-            '<div class="field"><label class="label">Ícono</label><div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px;" id="dd-bic-grid"><button data-bic=\"🏆\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🏆</button><button data-bic=\"🎉\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎉</button><button data-bic=\"🌟\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🌟</button><button data-bic=\"🍹\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🍹</button><button data-bic=\"🎊\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎊</button><button data-bic=\"👑\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">👑</button><button data-bic=\"🔥\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🔥</button><button data-bic=\"💎\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">💎</button><button data-bic=\"🎯\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎯</button><button data-bic=\"🥂\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🥂</button><button data-bic=\"🌙\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🌙</button><button data-bic=\"⭐\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">⭐</button><label style=\"cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:3px;\" title=\"Subir imagen\"><span style=\"font-size:16px;\">📁</span><input type=\"file\" accept=\"image/*\" data-ctx=\"badge\" style=\"display:none;\" onchange=\"uploadCustomIconBtn(this)\"/></label></div></div>' +
+            '<div class="field"><label class="label">Ícono</label><div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:4px;" id="dd-bic-grid"><button data-bic=\"🏆\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🏆</button><button data-bic=\"🎉\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎉</button><button data-bic=\"🌟\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🌟</button><button data-bic=\"🍹\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🍹</button><button data-bic=\"🎊\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎊</button><button data-bic=\"👑\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">👑</button><button data-bic=\"🔥\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🔥</button><button data-bic=\"💎\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">💎</button><button data-bic=\"🎯\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎯</button><button data-bic=\"🥂\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🥂</button><button data-bic=\"🌙\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🌙</button><button data-bic=\"⭐\" onclick=\"selDDBIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">⭐</button><label style=\"cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:3px;\" title=\"Subir imagen\"><span style=\"font-size:16px;\">📁</span><input type=\"file\" accept=\"image/*\" data-ctx=\"badge\" style=\"display:none;\" onchange=\"uploadCustomIconBtn(this)\"/></label></div></div>' +
             '<div class="field"><label class="label">Color</label><div style="display:flex;gap:6px;" id="dd-bcc-grid"><button data-bcc=\"#C9A84C\" onclick=\"selDDBColor(this)\" style=\"width:24px;height:24px;background:#C9A84C;border:2px solid #2A2A1A;border-radius:50%;\"></button><button data-bcc=\"#2E7D5A\" onclick=\"selDDBColor(this)\" style=\"width:24px;height:24px;background:#2E7D5A;border:2px solid #2A2A1A;border-radius:50%;\"></button><button data-bcc=\"#8A2020\" onclick=\"selDDBColor(this)\" style=\"width:24px;height:24px;background:#8A2020;border:2px solid #2A2A1A;border-radius:50%;\"></button><button data-bcc=\"#1A4D8A\" onclick=\"selDDBColor(this)\" style=\"width:24px;height:24px;background:#1A4D8A;border:2px solid #2A2A1A;border-radius:50%;\"></button><button data-bcc=\"#6A2080\" onclick=\"selDDBColor(this)\" style=\"width:24px;height:24px;background:#6A2080;border:2px solid #2A2A1A;border-radius:50%;\"></button><button data-bcc=\"#805020\" onclick=\"selDDBColor(this)\" style=\"width:24px;height:24px;background:#805020;border:2px solid #2A2A1A;border-radius:50%;\"></button></div></div>' +
             '<button data-mnum="'+mNum+'" onclick="dashAddBadgeBtn(this)" style="width:100%;padding:10px;background:linear-gradient(90deg,#8A6A20,#C9A84C);border:none;border-radius:3px;font-family:Cinzel,serif;font-size:10px;color:#0A0A08;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-top:4px;">+ Agregar Badge</button>' +
           '</div>' +
@@ -2248,7 +2251,7 @@ function openDashMember(num) {
             '<p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#555;text-transform:uppercase;margin-bottom:8px;">Agregar Regalo</p>' +
             '<div class="field"><label class="label">Nombre del Regalo</label><input class="inp" id="dd-regalo-title" type="text" placeholder="Ej. Trago VIP..."/></div>' +
             '<div class="field"><label class="label">Descripción (opcional)</label><input class="inp" id="dd-regalo-desc" type="text" placeholder="Descripción breve"/></div>' +
-            '<div class="field"><label class="label">Ícono</label><div style="display:flex;flex-wrap:wrap;gap:4px;" id="dd-ric-grid"><button data-ric=\"🎁\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎁</button><button data-ric=\"🍹\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🍹</button><button data-ric=\"🥂\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🥂</button><button data-ric=\"🍸\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🍸</button><button data-ric=\"🎊\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎊</button><button data-ric=\"🌟\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🌟</button><button data-ric=\"💝\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">💝</button><button data-ric=\"🎀\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎀</button><button data-ric=\"✨\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">✨</button><button data-ric=\"🎯\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🎯</button><button data-ric=\"🏅\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">🏅</button><button data-ric=\"💫\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:#0A0A08;border:1.5px solid #2A2A1A;border-radius:3px;\">💫</button><label style=\"cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:3px;\" title=\"Subir imagen\"><span style=\"font-size:16px;\">📁</span><input type=\"file\" accept=\"image/*\" data-ctx=\"regalo\" style=\"display:none;\" onchange=\"uploadCustomIconBtn(this)\"/></label></div></div>' +
+            '<div class="field"><label class="label">Ícono</label><div style="display:flex;flex-wrap:wrap;gap:4px;" id="dd-ric-grid"><button data-ric=\"🎁\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎁</button><button data-ric=\"🍹\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🍹</button><button data-ric=\"🥂\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🥂</button><button data-ric=\"🍸\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🍸</button><button data-ric=\"🎊\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎊</button><button data-ric=\"🌟\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🌟</button><button data-ric=\"💝\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">💝</button><button data-ric=\"🎀\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎀</button><button data-ric=\"✨\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">✨</button><button data-ric=\"🎯\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🎯</button><button data-ric=\"🏅\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">🏅</button><button data-ric=\"💫\" onclick=\"selDDRIcon(this)\" style=\"width:30px;height:30px;font-size:14px;background:rgba(5,4,3,0.35);border:1.5px solid rgba(201,168,76,0.12);border-radius:6px;\">💫</button><label style=\"cursor:pointer;display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;background:#0A0A08;border:2px dashed #C9A84C66;border-radius:3px;\" title=\"Subir imagen\"><span style=\"font-size:16px;\">📁</span><input type=\"file\" accept=\"image/*\" data-ctx=\"regalo\" style=\"display:none;\" onchange=\"uploadCustomIconBtn(this)\"/></label></div></div>' +
             '<button data-mnum="'+mNum+'" onclick="dashAddRegaloBtn(this)" style="width:100%;padding:10px;background:linear-gradient(90deg,#8A6A20,#C9A84C);border:none;border-radius:3px;font-family:Cinzel,serif;font-size:10px;color:#0A0A08;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-top:4px;">🎁 Agregar Regalo</button>' +
           '</div>' +
         '</div>' +
@@ -2518,7 +2521,7 @@ function renderSellos() {
           '</div>';
     }
     var pct = isDone ? 100 : Math.round((earned/total)*100);
-    html += '<div style="background:#0E0E0A;border:1px solid '+border+';border-radius:4px;padding:18px 16px;margin-bottom:12px;opacity:'+opacity+';position:relative;">' +
+    html += '<div style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid '+border+';border-radius:4px;padding:18px 16px;margin-bottom:12px;opacity:'+opacity+';position:relative;">' +
       '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">' +
         '<div>' +
           '<p style="font-family:serif;font-size:8px;letter-spacing:3px;color:#8A7A5A;text-transform:uppercase;margin-bottom:2px;">Nivel '+lv.id+' · '+lv.max+' máx</p>' +
@@ -2641,7 +2644,7 @@ function renderRecompensas() {
         '<button onclick="startRedeem('+r.level+')" style="margin-top:14px;width:100%;padding:12px;border-radius:2px;background:linear-gradient(90deg,#8A6A20,#C9A84C,#E8C96A);border:none;font-family:Cinzel,serif;font-size:10px;color:#0A0A08;letter-spacing:3px;text-transform:uppercase;font-weight:700;touch-action:manipulation;">✦ Canjear Ahora</button>' +
       '</div>' : '';
     var date = state.redeemedLevels[r.level] ? '<p style="font-family:serif;font-size:9px;color:#555;margin-top:6px;font-style:italic;">Canjeado el '+state.redeemedLevels[r.level]+'</p>' : '';
-    html += '<div style="background:#0E0E0A;border:1px solid '+(r.status==='available'?'#C9A84C44':r.status==='redeemed'?'#2E7D5A33':'#1A1A1A')+';border-radius:4px;padding:18px 16px;margin-bottom:12px;box-shadow:'+(r.status==='available'?'0 4px 20px #C9A84C11':'none')+'">' +
+    html += '<div style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid '+(r.status==='available'?'#C9A84C44':r.status==='redeemed'?'#2E7D5A33':'#1A1A1A')+';border-radius:4px;padding:18px 16px;margin-bottom:12px;box-shadow:'+(r.status==='available'?'0 4px 20px #C9A84C11':'none')+'">' +
       '<div style="display:flex;justify-content:space-between;align-items:flex-start;">' +
         '<div style="flex:1;margin-right:12px;">' +
           '<p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#8A7A5A;text-transform:uppercase;margin-bottom:4px;">Nivel '+r.level+' · '+r.levelName+'</p>' +
@@ -2658,7 +2661,7 @@ function renderRecompensas() {
   // Add custom rewards to available tab
   if (currentRewardsTab === 'available' && myCustomRewards.length > 0) {
     myCustomRewards.forEach(function(r) {
-      html += '<div style="background:#0E0E0A;border:1px solid #C9A84C44;border-radius:4px;padding:18px 16px;margin-bottom:12px;box-shadow:0 4px 20px #C9A84C11;">' +
+      html += '<div style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #C9A84C44;border-radius:4px;padding:18px 16px;margin-bottom:12px;box-shadow:0 4px 20px #C9A84C11;">' +
         '<div style="display:flex;justify-content:space-between;align-items:flex-start;">' +
           '<div style="flex:1;margin-right:12px;">' +
             '<p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#8A7A5A;text-transform:uppercase;margin-bottom:4px;">Regalo Especial del Bartender</p>' +
@@ -2679,7 +2682,7 @@ function renderRecompensas() {
   if (currentRewardsTab === 'redeemed' && redeemedCustom.length > 0) {
     redeemedCustom.forEach(function(r) {
       html +=
-        '<div style="background:#0E0E0A;border:1px solid #2E7D5A33;border-radius:4px;padding:18px 16px;margin-bottom:12px;">' +
+        '<div style="background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #2E7D5A33;border-radius:4px;padding:18px 16px;margin-bottom:12px;">' +
           '<div style="display:flex;justify-content:space-between;align-items:flex-start;">' +
             '<div style="flex:1;margin-right:12px;">' +
               '<p style="font-family:serif;font-size:8px;letter-spacing:2px;color:#8A7A5A;text-transform:uppercase;margin-bottom:4px;">Regalo Especial del Bartender</p>' +
@@ -2705,7 +2708,7 @@ function startRedeem(level) {
     '<p style="font-family:serif;font-size:11px;color:#E8C96A;text-align:center;margin-bottom:12px;">¿Confirmar canje de esta recompensa?</p>' +
     '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">' +
       '<button data-lv="'+level+'" onclick="confirmRedeemBtn(this)" style="padding:10px;background:linear-gradient(90deg,#8A6A20,#C9A84C);border:none;border-radius:2px;font-family:Cinzel,serif;font-size:10px;color:#0A0A08;letter-spacing:2px;text-transform:uppercase;font-weight:700;touch-action:manipulation;">Confirmar</button>' +
-      '<button data-lv="'+level+'" onclick="cancelRedeemBtn(this)" style="padding:10px;background:#0E0E0A;border:1px solid #2A2A1A;border-radius:2px;font-family:serif;font-size:10px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;touch-action:manipulation;">Cancelar</button>' +
+      '<button data-lv="'+level+'" onclick="cancelRedeemBtn(this)" style="padding:10px;background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #2A2A1A;border-radius:2px;font-family:serif;font-size:10px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;touch-action:manipulation;">Cancelar</button>' +
     '</div></div>';
 }
 function confirmRedeem(level) {
@@ -2723,7 +2726,7 @@ function startCustomRedeem(btn) {
       '<p style="font-family:serif;font-size:11px;color:#E8C96A;text-align:center;margin-bottom:12px;">Confirmar canje de este regalo?</p>' +
       '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">' +
         '<button data-rid="'+rid+'" onclick="confirmCustomRedeem(this)" style="padding:10px;background:linear-gradient(90deg,#8A6A20,#C9A84C);border:none;border-radius:2px;font-family:Cinzel,serif;font-size:10px;color:#0A0A08;letter-spacing:2px;text-transform:uppercase;font-weight:700;touch-action:manipulation;">Confirmar</button>' +
-        '<button data-rid="'+rid+'" onclick="cancelCustomRedeem(this)" style="padding:10px;background:#0E0E0A;border:1px solid #2A2A1A;border-radius:2px;font-family:serif;font-size:10px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;touch-action:manipulation;">Cancelar</button>' +
+        '<button data-rid="'+rid+'" onclick="cancelCustomRedeem(this)" style="padding:10px;background:rgba(8,6,3,0.18);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border:1px solid #2A2A1A;border-radius:2px;font-family:serif;font-size:10px;color:#8A7A5A;letter-spacing:2px;text-transform:uppercase;touch-action:manipulation;">Cancelar</button>' +
       '</div>' +
     '</div>';
 }
@@ -2803,9 +2806,6 @@ function dismissSting() {
   overlay.style.pointerEvents = 'none';
   setTimeout(function(){
     overlay.style.display = 'none';
-    // Start background video after sting fades out
-    var bgv = document.getElementById('bg-video');
-    if (bgv) bgv.play();
   }, 800);
 }
 // Auto-dismiss fallback if onended doesn't fire
