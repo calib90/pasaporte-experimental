@@ -1597,7 +1597,7 @@ function uploadCustomIcon(input, context) {
         var btn = document.createElement('button');
         btn.setAttribute('data-ic', dataUrl);
         btn.className = 'icon-opt';
-        btn.style.cssText = 'width:36px;height:36px;padding:2px;background:#0A0A08;border:2px solid #C9A84C;border-radius:4px;';
+        btn.style.cssText = 'width:36px;height:36px;padding:2px;background:rgba(5,4,3,0.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:2px solid #C9A84C;border-radius:4px;';
         btn.innerHTML = '<img src="'+dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/>';
         btn.onclick = function(){ selectIconBtn(this); };
         picker.insertBefore(btn, picker.lastElementChild);
@@ -1610,7 +1610,7 @@ function uploadCustomIcon(input, context) {
       if (ddPicker) {
         var btn2 = document.createElement('button');
         btn2.setAttribute('data-bic', dataUrl);
-        btn2.style.cssText = 'width:30px;height:30px;padding:2px;background:#0A0A08;border:2px solid #C9A84C;border-radius:3px;';
+        btn2.style.cssText = 'width:30px;height:30px;padding:2px;background:rgba(5,4,3,0.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:2px solid #C9A84C;border-radius:3px;';
         btn2.innerHTML = '<img src="'+dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/>';
         btn2.onclick = function(){ selDDBIcon(this); };
         ddPicker.insertBefore(btn2, ddPicker.lastElementChild);
@@ -1622,7 +1622,7 @@ function uploadCustomIcon(input, context) {
       if (picker3) {
         var btn3 = document.createElement('button');
         btn3.setAttribute('data-ic', dataUrl);
-        btn3.style.cssText = 'width:36px;height:36px;padding:2px;background:#0A0A08;border:2px solid #C9A84C;border-radius:4px;';
+        btn3.style.cssText = 'width:36px;height:36px;padding:2px;background:rgba(5,4,3,0.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:2px solid #C9A84C;border-radius:4px;';
         btn3.innerHTML = '<img src="'+dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/>';
         btn3.onclick = function(){ selectRegaloIcon(this); window._regaloIcon = dataUrl; };
         picker3.insertBefore(btn3, picker3.lastElementChild);
@@ -1634,7 +1634,7 @@ function uploadCustomIcon(input, context) {
       if (ddRPicker) {
         var btn4 = document.createElement('button');
         btn4.setAttribute('data-ric', dataUrl);
-        btn4.style.cssText = 'width:30px;height:30px;padding:2px;background:#0A0A08;border:2px solid #C9A84C;border-radius:3px;';
+        btn4.style.cssText = 'width:30px;height:30px;padding:2px;background:rgba(5,4,3,0.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:2px solid #C9A84C;border-radius:3px;';
         btn4.innerHTML = '<img src="'+dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/>';
         btn4.onclick = function(){ selDDRIcon(this); };
         ddRPicker.insertBefore(btn4, ddRPicker.lastElementChild);
@@ -2063,7 +2063,7 @@ function uploadEvIcon(input) {
     if (picker) {
       var btn = document.createElement('button');
       btn.setAttribute('data-evic', dataUrl);
-      btn.style.cssText = 'width:30px;height:30px;padding:2px;background:#0A0A08;border:2px solid #C9A84C;border-radius:3px;cursor:pointer;';
+      btn.style.cssText = 'width:30px;height:30px;padding:2px;background:rgba(5,4,3,0.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:2px solid #C9A84C;border-radius:3px;cursor:pointer;';
       btn.innerHTML = '<img src="'+dataUrl+'" style="width:100%;height:100%;object-fit:cover;border-radius:2px;"/>';
       btn.onclick = function(){ selEvIcon(this); };
       picker.insertBefore(btn, picker.lastElementChild);
@@ -2559,9 +2559,12 @@ function renderExploracion() {
   }).join('');
   var all  = _sp.every(function(s){return s.unlocked;});
   var rew  = document.getElementById('spirits-reward');
-  rew.style.background = all?'linear-gradient(135deg,#1A2E1A,#0D1A0D)':'#0A0A08';
-  rew.style.border     = '1px solid '+(all?'#2E7D5A88':'#1A1A1A');
-  rew.style.boxShadow  = all?'0 0 24px #2E7D5A33':'none';
+  rew.style.background = all?'rgba(20,50,25,0.25)':'rgba(8,6,3,0.2)';
+  rew.style.backdropFilter = 'blur(28px) saturate(1.8)';
+  rew.style.webkitBackdropFilter = 'blur(28px) saturate(1.8)';
+  rew.style.border     = '1px solid '+(all?'rgba(46,125,90,0.45)':'rgba(201,168,76,0.15)');
+  rew.style.borderRadius = '16px';
+  rew.style.boxShadow  = all?'0 0 24px rgba(46,125,90,0.2),inset 0 1px 0 rgba(46,125,90,0.2)':'inset 0 1px 0 rgba(201,168,76,0.1)';
   rew.innerHTML = '<div style="font-size:28px;margin-bottom:8px;">'+(all?'🍹':'🔒')+'</div>' +
     '<p style="font-family:serif;font-size:9px;letter-spacing:3px;color:'+(all?'#2E7D5A':'#555')+';text-transform:uppercase;margin-bottom:4px;">Recompensa de Exploración</p>' +
     '<p style="font-family:Cinzel,serif;font-size:13px;color:'+(all?'#E8C96A':'#555')+';letter-spacing:1px;">Cóctel de Autor de Cortesía</p>' +
@@ -2765,11 +2768,14 @@ function renderCertificado() {
   var isGran = m.totalCocktails >= 75;
   var p75    = Math.min(Math.round((m.totalCocktails/75)*100),100);
   var card   = document.getElementById('cert-card');
-  card.style.background  = isGran?'linear-gradient(135deg,#1A1A08,#12120A,#0A0A06)':'linear-gradient(135deg,#0E0E0A,#0A0A08)';
-  card.style.border      = '2px solid '+(isGran?'#C9A84C88':'#1A1A1A');
+  card.style.background  = isGran?'rgba(15,12,3,0.22)':'rgba(8,6,3,0.18)';
+  card.style.backdropFilter = 'blur(28px) saturate(1.8)';
+  card.style.webkitBackdropFilter = 'blur(28px) saturate(1.8)';
+  card.style.border      = '2px solid '+(isGran?'rgba(201,168,76,0.45)':'rgba(201,168,76,0.12)');
+  card.style.borderRadius = '16px';
   card.style.filter      = isGran?'none':'grayscale(0.8)';
   card.style.opacity     = isGran?'1':'0.5';
-  card.style.boxShadow   = isGran?'0 0 40px #C9A84C22,inset 0 0 40px #C9A84C08':'none';
+  card.style.boxShadow   = isGran?'0 0 40px rgba(201,168,76,0.15),inset 0 1px 0 rgba(201,168,76,0.25)':'inset 0 1px 0 rgba(201,168,76,0.08)';
   card.innerHTML =
     '<p style="font-family:serif;font-size:9px;letter-spacing:5px;color:#8A7A5A;text-transform:uppercase;margin-bottom:12px;">Coctelería Experimental · Certifica a</p>' +
     '<p style="font-family:Cinzel,serif;font-size:22px;color:#E8C96A;letter-spacing:2px;margin-bottom:4px;">'+escapeHtml(m.name)+'</p>' +
