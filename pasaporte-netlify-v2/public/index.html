@@ -26,15 +26,13 @@ input, select { font-family: inherit; outline: none; }
 ::-webkit-scrollbar-thumb { background: #C9A84C44; }
 
 /* ── BACKGROUND — animated ambient glow ───────────────── */
+/* bg.jpg kept as poster fallback */
 body::after {
   content: '';
   position: fixed;
   inset: 0;
   z-index: -1;
-  background-image: url('bg.jpg');
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  background: #050403;
   pointer-events: none;
 }
 /* Dark overlay so glass panels read clearly over the background */
@@ -390,6 +388,13 @@ body::before {
 </head>
 <body>
 <!-- ── STING OVERLAY ────────────────────────────────────── -->
+<!-- ── VIDEO BACKGROUND ─────────────────────────── -->
+<video id="bg-video" autoplay muted playsinline webkit-playsinline
+  onended="this.pause();"
+  style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-2;pointer-events:none;">
+  <source src="bg-video.mp4" type="video/mp4"/>
+</video>
+
 <div id="sting-overlay" style="position:fixed;inset:0;z-index:9999;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity 0.8s ease;">
   <video id="sting-vid" src="intro.mp4" autoplay muted playsinline webkit-playsinline style="width:100%;height:100%;object-fit:cover;display:block;" onended="dismissSting()"></video>
   <button onclick="dismissSting()" id="sting-skip-outer" style="position:fixed;bottom:28px;right:28px;padding:9px 22px;font-family:monospace;font-size:12px;color:rgba(224,181,61,0.7);letter-spacing:0.22em;text-transform:uppercase;background:rgba(21,16,12,0.72);border:1px solid rgba(224,181,61,0.26);border-radius:4px;cursor:pointer;backdrop-filter:blur(8px);z-index:10000;display:none;">Skip ›</button>
