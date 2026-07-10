@@ -14,7 +14,7 @@
 
 /* ── BASE ─────────────────────────────────────────────── */
 body {
-  background: #0A0A08;
+  background: #0A0A08 url('bg.jpg') center top / cover no-repeat;
   color: #F0E6CC;
   font-family: 'Cormorant Garamond', Georgia, serif;
   min-height: 100vh;
@@ -984,9 +984,15 @@ function doLogin() {
   });
 }
 function loginSuccess(member) {
-  // Play vault video on login
+  // Fade out static bg.jpg and play vault video
   var bgv = document.getElementById('bg-video');
-  if (bgv) { bgv.currentTime = 0; bgv.play(); }
+  if (bgv) {
+    bgv.currentTime = 0;
+    bgv.style.opacity = '0';
+    bgv.style.transition = 'opacity 0.6s ease';
+    bgv.play();
+    setTimeout(function(){ bgv.style.opacity = '1'; }, 50);
+  }
   state.member = member;
   state.redeemedLevels = {};
   state.stampLog = [];
