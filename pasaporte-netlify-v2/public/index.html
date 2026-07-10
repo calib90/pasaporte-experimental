@@ -360,6 +360,8 @@ body::after {
 #badge-lightbox-inner { text-align: center; max-width: 300px; width: 100%; animation: lbIn 0.3s ease; }
 @keyframes lbIn { from{opacity:0;transform:scale(0.7)} to{opacity:1;transform:scale(1)} }
 
+.seals{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;}
+
 /* ── ANIMATIONS ───────────────────────────────────────── */
 @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
@@ -2492,10 +2494,10 @@ function renderSellos() {
     for (var i=0; i<total; i++) {
       var f = i < earned;
       sealsHtml += f
-        ? '<div class="wax-seal wax-seal-red" style="width:28px;height:28px;cursor:default;">' +
+        ? '<div class="wax-seal wax-seal-red" style="width:28px;height:28px;cursor:default;display:inline-flex;">' +
             '<div class="wax-seal-inner" style="width:65%;height:65%;"><span style="font-family:Cinzel,serif;font-size:6px;color:rgba(255,255,255,0.7);font-weight:700;">'+(start+i+1)+'</span></div>' +
           '</div>'
-        : '<div class="wax-seal wax-seal-empty" style="width:28px;height:28px;cursor:default;">' +
+        : '<div class="wax-seal wax-seal-empty" style="width:28px;height:28px;cursor:default;display:inline-flex;">' +
             '<div class="wax-seal-inner"></div>' +
           '</div>';
     }
